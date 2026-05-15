@@ -1,0 +1,32 @@
+name: Test Formula
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Formula/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "Formula/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Install formula
+        run: brew install --formula ./Formula/ngsrv.rb
+
+      - name: Verify binary runs
+        run: ngsrv version

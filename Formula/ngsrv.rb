@@ -1,28 +1,28 @@
 class Ngsrv < Formula
   desc "Secure WebSocket-based tunnel CLI for exposing local servers to the internet"
   homepage "https://ngsrv.com"
-  version "2.3.2"
+  version "2.3.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://releases.ngsrv.com/v2.3.2/ngsrv_2.3.2_darwin-arm64.tar.gz"
-      sha256 "745652b82e2b5afe05ad86e40d620086a69b6f55858bf72f1d0c9eab9c782ead"
+      url "https://releases.ngsrv.com/v2.3.3/ngsrv_2.3.3_darwin-arm64.tar.gz"
+      sha256 "e78f86168502c923fbaeea0594355a0d953cb87012f4ec364f3621a107ce0b57"
     end
     on_intel do
-      url "https://releases.ngsrv.com/v2.3.2/ngsrv_2.3.2_darwin-amd64.tar.gz"
-      sha256 "0349537d657c37aff97b96743ab93130d43500f25f54517f6a5c5bed14b6b5f8"
+      url "https://releases.ngsrv.com/v2.3.3/ngsrv_2.3.3_darwin-amd64.tar.gz"
+      sha256 "77afc6c533f2523708c3b5931f61f161ad7977a9be84e02e11dd7146d6f0c061"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://releases.ngsrv.com/v2.3.2/ngsrv_2.3.2_linux-arm64.tar.gz"
-      sha256 "da2eca4e49fccc7069766a951dccfd11f81ab9b82f210385bd9d5d19c3eadab4"
+      url "https://releases.ngsrv.com/v2.3.3/ngsrv_2.3.3_linux-arm64.tar.gz"
+      sha256 "9ad2e25cb0b233d992b74e5eddb9b6ef005b3cc97868344a1e6faf14e654eb85"
     end
     on_intel do
-      url "https://releases.ngsrv.com/v2.3.2/ngsrv_2.3.2_linux-amd64.tar.gz"
-      sha256 "dc837cd6ef1272de6d4be2649c7ed48327ccb3e2005e223717a4d7808c44ab3f"
+      url "https://releases.ngsrv.com/v2.3.3/ngsrv_2.3.3_linux-amd64.tar.gz"
+      sha256 "c452cc1b981a63143e94c3a4098616a82481e608bd63e483ecbbc08db985d5ef"
     end
   end
 
